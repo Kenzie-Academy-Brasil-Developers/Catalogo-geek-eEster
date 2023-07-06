@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 3vh;
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: #0A99FE;
+    background-color: #0a98fe10 ;
+   
+}
+button:hover{
+    color: white;
+    background-color: #0a98fe ;
+}
+
+.main{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20 px;
+    color: black;
+    margin:40px ;
+        
+  
+}
+.titulo_da_secao{
+   padding-bottom: 3rem;
+   font-weight: bold;
+}
+.list_paintings{
+    display: flex;
+
+    gap: 20px;
+    overflow-x: auto;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+.list_action{
+    display: flex;
+  
+    gap: 20px;
+    overflow-x: auto;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+.card{
+    border-radius: 15px;
+    height: 275px;
+    width: 207px;
+    background-color:#86838330;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.imagem_card{
+    border-radius: 15px 15px 0px 0px;
+    width: 207px;
+    height: 50%;
+}
+
+.nome_produto{
+    font-size: 20px;
+    margin-top: 40px;
+    padding-top: 20px;
+    margin: 10px;
+    align-items: center;
+}
+
+.preco_produto{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    padding-top: 10px;
+}
