@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body{
+body {
     background-color: #FFFFFF;
-}
+    font-family: 'Roboto', sans-serif;
 
+}
 
 header {
     display: flex;
@@ -16,71 +17,70 @@ header {
 }
 
 .button {
-    font-family: 'Roboto', sans-serif;
+
     font-size: 20px;
     width: 150px;
     height: 40px;
     border-radius: 5px;
     border: none;
     color: #0A99FE;
-    background-color: #0a98fe10 ;
-   
-}
-button:hover{
-    color: white;
-    background-color: #0a98fe ;
+    background-color: #0a98fe10;
+
 }
 
-.main{
-    font-family: 'Roboto', sans-serif;
+button:hover {
+    color: white;
+    background-color: #0a98fe;
+}
+
+.main {
     font-size: 20 px;
     color: black;
-    margin:40px ;
-        
-  
+    margin: 40px;
 }
-.titulo_da_secao{
-   padding-bottom: 3rem;
-   font-weight: bold;
-   color: #1B1B1B;
-}
-.list_paintings{
-    display: flex;
 
-    gap: 20px;
-    overflow-x: auto;
-    flex-direction: row;
-    align-items: stretch;
-    flex-wrap: nowrap;
+.section_title {
+    padding-bottom: 3rem;
+    font-weight: bold;
+    color: #1B1B1B;
 }
-.list_action{
+
+.list_paintings {
     display: flex;
-  
     gap: 20px;
     overflow-x: auto;
     flex-direction: row;
     align-items: stretch;
     flex-wrap: nowrap;
 }
-.card{
+
+.list_action {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.card {
     border-radius: 15px;
     height: 275px;
     width: 207px;
-    background-color:#86838330;
+    background-color: #86838330;
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
 }
 
-.imagem_card{
+.image_card {
     border-radius: 15px 15px 0px 0px;
     width: 207px;
     height: 50%;
 }
 
-.nome_produto{
+.product_name {
     font-size: 20px;
     margin-top: 40px;
     padding-top: 20px;
@@ -89,7 +89,7 @@ button:hover{
     align-items: center;
 }
 
-.preco_produto{
+.product_price {
     font-size: 16px;
     color: #868383;
     align-items: center;

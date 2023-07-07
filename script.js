@@ -79,12 +79,10 @@ const productsArray = [
   },
 ];
 
-
 //Separando os produdos 
 
 const actionFiguresArray = []
 const paintingsArray = []
-
 
 function separateItens(productsArray) {
 
@@ -94,87 +92,73 @@ function separateItens(productsArray) {
     if (produtos.type == "Paintings") {
       paintingsArray.push(produtos)
 
-
     } else if (produtos.type == "Action Figures") {
       actionFiguresArray.push(produtos)
-
     }
   }
 
 }
 separateItens(productsArray)
 
-
-
-function secaoPainting(paintingsArray) {
+function sectionPainting(paintingsArray) {
 
   const ulPaintings = document.querySelector(".list_paintings")
 
   for (let i = 0; i < paintingsArray.length; i++) {
+
     const paintings = paintingsArray[i]
 
+    const creatingLi = document.createElement("li")
+    creatingLi.classList.add("card")
 
-    const criandoLi = document.createElement("li")
-    criandoLi.classList.add("card")
+    const creatingImg = document.createElement("img")
+    creatingImg.classList.add("image_card")
+    creatingImg.src = paintings.image
+    creatingImg.alt = paintings.name
 
-    const criandoImg = document.createElement("img")
-    criandoImg.classList.add("imagem_card")
-    criandoImg.src = paintings.image
-    criandoImg.alt = paintings.name
+    const creatingH2 = document.createElement("h2")
+    creatingH2.classList.add("product_name")
+    creatingH2.innerText = paintings.name
 
+    const creatingH2_price = document.createElement("h2")
+    creatingH2_price.classList.add("product_price")
+    creatingH2_price.innerText = paintings.price
 
-    const criandoH2 = document.createElement("h2")
-    criandoH2.classList.add("nome_produto")
-    criandoH2.innerText = paintings.name
-
-    const criandoH2_preco = document.createElement("h2")
-    criandoH2_preco.classList.add("preco_produto")
-    criandoH2_preco.innerText = paintings.price
-
-    criandoLi.append(criandoImg, criandoH2, criandoH2_preco);
-    ulPaintings.appendChild(criandoLi);
-
+    creatingLi.append(creatingImg, creatingH2, creatingH2_price);
+    ulPaintings.appendChild(creatingLi);
 
   }
-
-
 }
+sectionPainting(paintingsArray)
 
-secaoPainting(paintingsArray)
-
-
-
-function secaoActionFigure(actionFiguresArray){
+function sectionActionFigure(actionFiguresArray){
 
   const ulAction = document.querySelector(".list_action")
 
   for (let i = 0; i < actionFiguresArray.length; i++) {
     const action = actionFiguresArray[i]
 
+    const creatingLi = document.createElement("li")
+    creatingLi.classList.add("card")
 
-    const criandoLi = document.createElement("li")
-    criandoLi.classList.add("card")
+    const creatingImg = document.createElement("img")
+    creatingImg.classList.add("image_card")
+    creatingImg.src = action.image
+    creatingImg.alt = action.name
 
-    const criandoImg = document.createElement("img")
-    criandoImg.classList.add("imagem_card")
-    criandoImg.src = action.image
-    criandoImg.alt = action.name
+    const creatingH2 = document.createElement("h2")
+    creatingH2.classList.add("product_name")
+    creatingH2.innerText = action.name
 
+    const creatingH2_price = document.createElement("h2")
+    creatingH2_price.classList.add("product_price")
+    creatingH2_price.innerText = action.price
 
-    const criandoH2 = document.createElement("h2")
-    criandoH2.classList.add("nome_produto")
-    criandoH2.innerText = action.name
-
-    const criandoH2_preco = document.createElement("h2")
-    criandoH2_preco.classList.add("preco_produto")
-    criandoH2_preco.innerText = action.price
-
-    criandoLi.append(criandoImg, criandoH2, criandoH2_preco);
-    ulAction.appendChild(criandoLi);
-
+    creatingLi.append(creatingImg, creatingH2, creatingH2_price);
+    ulAction.appendChild(creatingLi);
 
   }
 }
-secaoActionFigure(actionFiguresArray)
+sectionActionFigure(actionFiguresArray)
 
 
