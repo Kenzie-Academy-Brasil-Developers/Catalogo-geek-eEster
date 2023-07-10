@@ -87,13 +87,13 @@ const paintingsArray = []
 function separateItens(productsArray) {
 
   for (let i = 0; i < productsArray.length; i++) {
-    let produtos = productsArray[i]
+    let product = productsArray[i]
 
-    if (produtos.type == "Paintings") {
-      paintingsArray.push(produtos)
+    if (product.type == "Paintings") {
+      paintingsArray.push(product)
 
-    } else if (produtos.type == "Action Figures") {
-      actionFiguresArray.push(produtos)
+    } else if (product.type == "Action Figures") {
+      actionFiguresArray.push(product)
     }
   }
 
