@@ -108,24 +108,24 @@ function sectionPainting(paintingsArray) {
 
     const paintings = paintingsArray[i]
 
-    const creatingLi = document.createElement("li")
-    creatingLi.classList.add("card")
+    const paintingsCard = document.createElement("li")
+    paintingsCard.classList.add("card")
 
-    const creatingImg = document.createElement("img")
-    creatingImg.classList.add("image_card")
-    creatingImg.src = paintings.image
-    creatingImg.alt = paintings.name
+    const paintingsImg = document.createElement("img")
+    paintingsImg.classList.add("image_card")
+    paintingsImg.src = paintings.image
+    paintingsImg.alt = paintings.name
 
-    const creatingH2 = document.createElement("h2")
-    creatingH2.classList.add("product_name")
-    creatingH2.innerText = paintings.name
+    const paintingsProductName = document.createElement("h2")
+    paintingsProductName.classList.add("product_name")
+    paintingsProductName.innerText = paintings.name
 
-    const creatingH2_price = document.createElement("h2")
-    creatingH2_price.classList.add("product_price")
-    creatingH2_price.innerText = paintings.price
+    const paintingsProductPrice = document.createElement("h2")
+    paintingsProductPrice.classList.add("product_price")
+    paintingsProductPrice.innerText = paintings.price
 
-    creatingLi.append(creatingImg, creatingH2, creatingH2_price);
-    ulPaintings.appendChild(creatingLi);
+    paintingsCard.append(paintingsImg, paintingsProductName, paintingsProductPrice);
+    ulPaintings.appendChild(paintingsCard);
 
   }
 }
@@ -138,24 +138,24 @@ function sectionActionFigure(actionFiguresArray){
   for (let i = 0; i < actionFiguresArray.length; i++) {
     const action = actionFiguresArray[i]
 
-    const creatingLi = document.createElement("li")
-    creatingLi.classList.add("card")
+    const actionCard = document.createElement("li")
+    actionCard.classList.add("card")
 
-    const creatingImg = document.createElement("img")
-    creatingImg.classList.add("image_card")
-    creatingImg.src = action.image
-    creatingImg.alt = action.name
+    const actionImg = document.createElement("img")
+    actionImg.classList.add("image_card")
+    actionImg.src = action.image
+    actionImg.alt = action.name
 
-    const creatingH2 = document.createElement("h2")
-    creatingH2.classList.add("product_name")
-    creatingH2.innerText = action.name
+    const actionProductName = document.createElement("h2")
+    actionProductName.classList.add("product_name")
+    actionProductName.innerText = action.name
 
-    const creatingH2_price = document.createElement("h2")
-    creatingH2_price.classList.add("product_price")
-    creatingH2_price.innerText = action.price
+    const actionProductPrice = document.createElement("h2")
+    actionProductPrice.classList.add("product_price")
+    actionProductPrice.innerText = action.price
 
-    creatingLi.append(creatingImg, creatingH2, creatingH2_price);
-    ulAction.appendChild(creatingLi);
+    actionCard.append(actionImg, actionProductName, actionProductPrice);
+    ulAction.appendChild(actionCard);
 
   }
 }
